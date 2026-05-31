@@ -36,7 +36,7 @@ export default function Testimonios() {
                 style={{ fontFamily: "var(--font-cormorant), serif" }}
                 aria-hidden="true"
               >
-                "
+                <p>{`"`}</p>
               </span>
 
               {/* Testimonio */}
