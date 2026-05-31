@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Tokens de diseño ── */
+:root {
+  --violeta:      #7D5C7C;
+  --violeta-mid:  #9B7A9A;
+  --lavanda:      #DDD5E8;
+  --lavanda-pale: #F0EDF5;
+  --crema:        #F7F4F0;
+  --arena:        #C9BB9A;
+  --arena-light:  #E8DFC8;
+  --negro:        #1A1A1A;
+  --gris:         #5A5A5A;
+  --blanco:       #FDFCFB;
+  --transicion:   0.4s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-cormorant), serif;
+  background-color: var(--blanco);
+  color: var(--negro);
+  overflow-x: hidden;
+}
+
+/* ── Utilidades compartidas ── */
+@layer components {
+
+  /* Eyebrow */
+  .eyebrow {
+    @apply font-titulo font-light text-[0.7rem] tracking-[0.25em] uppercase text-violeta mb-4;
+  }
+
+  /* Divisor */
+  .divisor {
+    @apply block w-12 h-px bg-arena mb-8;
+  }
+
+  /* Título de sección */
+  .titulo-seccion {
+    font-family: var(--font-cormorant), serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    color: var(--negro);
+    @apply mb-6;
+  }
+
+  .titulo-seccion em {
+    font-style: italic;
+    color: var(--violeta);
+  }
+
+  /* Texto de sección */
+  .texto-seccion {
+    font-family: var(--font-cormorant), serif;
+    @apply text-[1.1rem] leading-[1.85] text-gris;
+  }
+
+  /* Botones */
+  .btn-primario {
+    @apply bg-violeta text-blanco px-9 py-3 rounded-full font-titulo font-normal text-[0.82rem] tracking-[0.1em] uppercase no-underline transition-all duration-300 inline-block;
+  }
+  .btn-primario:hover {
+    @apply bg-violeta-mid -translate-y-0.5;
+  }
+
+  .btn-secundario {
+    @apply bg-transparent text-violeta border border-violeta px-9 py-3 rounded-full font-titulo font-normal text-[0.82rem] tracking-[0.1em] uppercase no-underline transition-all duration-300 inline-block;
+  }
+  .btn-secundario:hover {
+    @apply bg-lavanda -translate-y-0.5;
+  }
+}
