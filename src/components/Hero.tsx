@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoIcon from "./LogoIcon";
 import { hero } from "@/src/data/content";
 
 export default function Hero() {
@@ -39,31 +40,9 @@ export default function Hero() {
       {/* Contenido */}
       <div className="max-w-[780px] text-center relative z-10">
         {/* Símbolo */}
-        <svg
-          className="mx-auto mb-8 opacity-85"
-          width="72"
-          height="72"
-          viewBox="0 0 80 80"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M40 72 C40 72 16 54 16 36 C16 24 26 16 40 20 C54 16 64 24 64 36 C64 54 40 72 40 72Z"
-            fill="#7D5C7C"
-            opacity="0.15"
-          />
-          <path
-            d="M40 72 C40 72 16 56 20 38 C23 27 33 24 40 30 C47 24 57 27 60 38 C64 56 40 72 40 72Z"
-            fill="#7D5C7C"
-            opacity="0.45"
-          />
-          <path
-            d="M40 18 L42 25 L49 25 L43.5 29 L45.5 36 L40 32 L34.5 36 L36.5 29 L31 25 L38 25 Z"
-            fill="#7D5C7C"
-            opacity="0.9"
-          />
-        </svg>
+        <div className="flex justify-center mb-8 opacity-85">
+          <LogoIcon size={72} />
+        </div>
 
         <p className="eyebrow">{hero.eyebrow}</p>
 
