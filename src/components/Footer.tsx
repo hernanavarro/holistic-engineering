@@ -41,7 +41,7 @@ export default function Footer() {
         className="italic opacity-35 text-[0.82rem]"
         style={{ fontFamily: "var(--font-cormorant), serif" }}
       >
-        © {new Date().getFullYear()} Jimena Navarro — Ingeniería Holística. Todos los derechos reservados.
+        © {new Date().getFullYear()} · All rights reserved
       </p>
     </footer>
   );
