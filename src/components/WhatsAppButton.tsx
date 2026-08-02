@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
         className="opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0
                    transition-all duration-300 bg-negro text-blanco text-[0.75rem] tracking-[0.06em]
                    px-3 py-2 rounded whitespace-nowrap shadow-md pointer-events-none"
-        style={{ fontFamily: "var(--font-jost), sans-serif" }}
+        style={{ fontFamily: "var(--font-inter), sans-serif" }}
       >
         Escribime
       </span>

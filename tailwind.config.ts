@@ -21,7 +21,7 @@ const config: Config = {
         blanco: "#FDFCFB",
       },
       fontFamily: {
-        titulo: ["var(--font-jost)", "sans-serif"],
+        titulo: ["var(--font-inter)", "sans-serif"],
         cuerpo: ["var(--font-cormorant)", "serif"],
       },
       transitionDuration: {

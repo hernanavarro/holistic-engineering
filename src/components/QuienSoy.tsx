@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { quienSoy } from "@/src/data/content";
 
 export default function QuienSoy() {
@@ -10,16 +11,15 @@ export default function QuienSoy() {
       {/* Foto */}
       <div className="relative">
         <div
-          className="w-full flex items-center justify-center rounded-sm text-violeta-mid italic text-[0.95rem]"
-          style={{
-            aspectRatio: "3/4",
-            background:
-              "linear-gradient(140deg, var(--lavanda) 0%, var(--arena-light) 100%)",
-            fontFamily: "var(--font-cormorant), serif",
-          }}
+          className="relative w-full overflow-hidden rounded-sm"
+          style={{ aspectRatio: "3/4" }}
         >
-          {/* Reemplazá por: <Image src="/foto-jimena.jpg" alt="Jimena Navarro" fill className="object-cover" /> */}
-          Tu foto aquí
+          <Image
+            src="https://odxbwxmixquriirb.public.blob.vercel-storage.com/quiensoy-foto.jpg"
+            alt="Jimena Navarro"
+            fill
+            className="object-cover"
+          />
         </div>
         <div
           className="absolute bottom-[-20px] right-[-20px] w-[120px] h-[120px] border border-arena rounded-sm -z-10"

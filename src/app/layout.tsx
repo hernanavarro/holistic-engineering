@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Jost, Cormorant_Garamond } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
-const jost = Jost({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
-  variable: "--font-jost",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${jost.variable} ${cormorant.variable}`}>
+    <html lang="es" className={`${inter.variable} ${cormorant.variable}`}>
       <body>{children}</body>
     </html>
   );
