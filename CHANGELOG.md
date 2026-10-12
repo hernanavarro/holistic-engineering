@@ -7,6 +7,10 @@ All notable changes to this project are documented here. Format: version + date,
 ### Changed
 - Hero headline and subtitle rewritten ("Tu vida puede cambiar cuando decidís hacerte responsable de ella").
 - New profile photo in the "Quién soy" section (`quiensoy-foto-2.jpg` on Vercel Blob).
+- "Quién soy" photo now framed as an arch with offset outline, lavender halo and soft violet shadow.
+
+### Added
+- Studio photo in the "Yoga que trabaja desde adentro" section (`yoga-sala.jpg` on Vercel Blob), leaf-shaped frame, now also visible on mobile.
 
 ## [0.1.0] - 2026-08-02
 

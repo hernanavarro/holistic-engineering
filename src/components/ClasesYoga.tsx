@@ -1,5 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { yoga } from "@/src/data/content";
+
+// Hoja: dos esquinas opuestas muy redondeadas (eco de la hoja del logo)
+const HOJA = "160px 24px 160px 24px";
 
 export default function ClasesYoga() {
   return (
@@ -54,22 +58,32 @@ export default function ClasesYoga() {
           </div>
 
           {/* Visual */}
-          <div className="relative max-lg:hidden">
+          <div className="relative isolate w-full max-w-[480px] mx-auto max-lg:max-w-[420px]">
+            {/* Halo arena detrás */}
             <div
-              className="w-full flex items-center justify-center rounded-sm text-violeta-mid italic text-[0.95rem]"
-              style={{
-                aspectRatio: "4/5",
-                background:
-                  "linear-gradient(150deg, var(--arena-light) 0%, var(--lavanda) 100%)",
-                fontFamily: "var(--font-cormorant), serif",
-              }}
-            >
-              Tu foto aquí
-            </div>
-            <div
-              className="absolute top-[-20px] left-[-20px] w-[100px] h-[100px] border border-lavanda rounded-sm -z-10"
+              className="absolute -bottom-8 -right-8 w-44 h-44 max-md:-bottom-4 max-md:-right-3 max-md:w-28 max-md:h-28 rounded-full bg-arena-light/60 -z-10"
               aria-hidden="true"
             />
+            {/* Hoja desplazada (contorno) */}
+            <div
+              className="absolute inset-0 -translate-x-5 -translate-y-5 max-md:-translate-x-3 max-md:-translate-y-3 border border-violeta-mid/40 -z-10"
+              style={{ borderRadius: HOJA }}
+              aria-hidden="true"
+            />
+            {/* Foto en forma de hoja */}
+            <div
+              className="relative w-full overflow-hidden shadow-[0_30px_60px_-25px_rgba(125,92,124,0.45)]"
+              style={{ aspectRatio: "4/5", borderRadius: HOJA }}
+            >
+              <Image
+                src="https://odxbwxmixquriirb.public.blob.vercel-storage.com/yoga-sala.jpg"
+                alt="Sala de yoga con mats y luz natural"
+                fill
+                sizes="(max-width: 1024px) 90vw, 480px"
+                className="object-cover"
+                style={{ objectPosition: "50% 55%" }}
+              />
+            </div>
           </div>
         </div>
       </div>
