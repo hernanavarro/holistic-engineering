@@ -15,7 +15,7 @@ export default function QuienSoy() {
           style={{ aspectRatio: "3/4" }}
         >
           <Image
-            src="https://odxbwxmixquriirb.public.blob.vercel-storage.com/quiensoy-foto.jpg"
+            src="https://odxbwxmixquriirb.public.blob.vercel-storage.com/quiensoy-foto-2.jpg"
             alt="Jimena Navarro"
             fill
             className="object-cover"
