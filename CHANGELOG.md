@@ -4,6 +4,8 @@ All notable changes to this project are documented here. Format: version + date,
 
 ## [Unreleased]
 
+## [0.0.2] - 2026-10-12
+
 ### Changed
 - Hero headline and subtitle rewritten ("Tu vida puede cambiar cuando decidís hacerte responsable de ella").
 - New profile photo in the "Quién soy" section (`quiensoy-foto-2.jpg` on Vercel Blob).
