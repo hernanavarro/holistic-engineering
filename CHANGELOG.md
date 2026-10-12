@@ -11,6 +11,7 @@ All notable changes to this project are documented here. Format: version + date,
 
 ### Added
 - Studio photo in the "Yoga que trabaja desde adentro" section (`yoga-sala.jpg` on Vercel Blob), leaf-shaped frame, now also visible on mobile.
+- Hero background photo (`hero-fondo.jpg` on Vercel Blob) with a dark veil matching the current live page; hero text, logo and secondary button switched to light colors.
 
 ## [0.1.0] - 2026-08-02
 
