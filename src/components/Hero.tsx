@@ -44,7 +44,7 @@ export default function Hero() {
         <p className="eyebrow !text-lavanda">{hero.eyebrow}</p>
 
         <h1
-          className="font-titulo font-medium leading-[1.1] tracking-[-0.02em] text-blanco mb-7 drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
+          className="font-titulo font-medium leading-[1.1] tracking-[-0.02em] [text-wrap:balance] text-blanco mb-7 drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           style={{
             fontSize: "clamp(2.2rem, 4.6vw, 3.6rem)",
           }}

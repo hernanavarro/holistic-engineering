@@ -15,8 +15,8 @@ export const navLinks = [
 
 export const hero = {
   eyebrow: "Ingeniería Holística",
-  titulo: ["Tu vida puede cambiar", "cuando decidís hacerte ", "responsable", " de ella"],
-  // índice 2 es la palabra en itálico/violeta
+  titulo: ["Tu vida puede cambiar", "cuando decidís ", "hacerte responsable", " de\u00A0ella"],
+  // índice 2 es la frase en itálico/color de acento
   subtitulo:
     "Acompaño a personas que ya hicieron mucho y aún sienten que algo no termina de integrarse.",
   ctaPrimario: { label: "Quiero acompañamiento", href: "#sesiones" },

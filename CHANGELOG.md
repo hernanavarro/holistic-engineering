@@ -7,7 +7,7 @@ All notable changes to this project are documented here. Format: version + date,
 ### Changed
 - Brand palette aligned to the identity manual: violeta `#80688B`, lavanda `#E6DFEC`, crema `#F7F6F4`, arena `#D4C29E`, negro `#161616` (light/mid variants re-derived; hard-coded rgba values updated).
 - Hero, section and card titles now use the sans title font (stand-in for Neue Haas Grotesk Display Pro, per the manual); the emphasized word keeps Cormorant Garamond italic as an accent. Body copy stays in Cormorant Garamond.
-- Hero accent word ("responsable") uses a new, more saturated `lavanda-viva` (`#C7AEDB`) at medium weight so it stands out on the dark photo (Cormorant 500 now loaded).
+- Hero accent phrase ("hacerte responsable") uses a new, more saturated `lavanda-viva` (`#C7AEDB`) at medium weight so it stands out on the dark photo (Cormorant 500 now loaded). Title lines are balanced and "de ella" no longer breaks onto its own line.
 
 ## [0.0.2] - 2026-10-12
 
