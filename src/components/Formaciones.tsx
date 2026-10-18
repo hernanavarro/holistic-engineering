@@ -4,13 +4,13 @@ export default function Formaciones() {
   return (
     <section
       id="formaciones"
-      className="bg-negro text-blanco px-16 py-28 max-lg:px-10 max-lg:py-20 max-md:px-6"
+      className="bg-violeta text-blanco px-16 py-28 max-lg:px-10 max-lg:py-20 max-md:px-6"
     >
       <div className="max-w-[1200px] mx-auto">
-        <p className="font-titulo font-light text-[0.7rem] tracking-[0.25em] uppercase text-arena mb-4">
+        <p className="font-titulo font-light text-[0.7rem] tracking-[0.25em] uppercase text-arena-light mb-4">
           {formacionesHeader.eyebrow}
         </p>
-        <span className="block w-12 h-px bg-arena mb-8" />
+        <span className="block w-12 h-px bg-arena-light mb-8" />
         <h2
           className="font-titulo font-medium leading-[1.15] tracking-[-0.015em] text-blanco mb-6"
           style={{
@@ -20,14 +20,14 @@ export default function Formaciones() {
           {formacionesHeader.titulo[0]}
           <br />
           {formacionesHeader.titulo[1]}
-          <em className="titulo-acento !text-arena">{formacionesHeader.titulo[2]}</em>
+          <em className="titulo-acento !text-arena-light">{formacionesHeader.titulo[2]}</em>
         </h2>
         <p
           className="italic leading-[1.85] max-w-[560px] mb-14"
           style={{
             fontFamily: "var(--font-cormorant), serif",
             fontSize: "1.1rem",
-            color: "rgba(255,255,255,0.6)",
+            color: "rgba(255,255,255,0.85)",
           }}
         >
           {formacionesHeader.texto}
@@ -37,12 +37,12 @@ export default function Formaciones() {
           {formaciones.map((f) => (
             <div
               key={f.titulo}
-              className="border border-[rgba(212,194,158,0.2)] p-10 rounded-sm
-                         transition-all duration-300 hover:border-[rgba(212,194,158,0.5)]
-                         hover:bg-[rgba(255,255,255,0.03)]"
+              className="border border-[rgba(255,255,255,0.22)] p-10 rounded-sm
+                         transition-all duration-300 hover:border-[rgba(234,224,204,0.6)]
+                         hover:bg-[rgba(255,255,255,0.06)]"
             >
               <div className="text-[1.8rem] mb-5" aria-hidden="true">✦</div>
-              <div className="font-titulo font-normal text-[0.8rem] tracking-[0.15em] uppercase text-arena mb-2">
+              <div className="font-titulo font-normal text-[0.8rem] tracking-[0.15em] uppercase text-arena-light mb-2">
                 {f.nombre}
               </div>
               <div
@@ -58,7 +58,7 @@ export default function Formaciones() {
                 style={{
                   fontFamily: "var(--font-cormorant), serif",
                   fontSize: "0.98rem",
-                  color: "rgba(255,255,255,0.6)",
+                  color: "rgba(255,255,255,0.85)",
                 }}
               >
                 {f.desc}
