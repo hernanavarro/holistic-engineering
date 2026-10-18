@@ -32,10 +32,9 @@ export default function ClasesYoga() {
                   {item.modalidad}
                 </div>
                 <div
-                  className="font-light text-negro mb-2"
+                  className="font-titulo font-medium tracking-[-0.01em] text-negro mb-2"
                   style={{
-                    fontFamily: "var(--font-cormorant), serif",
-                    fontSize: "1.4rem",
+                    fontSize: "1.2rem",
                   }}
                 >
                   {item.titulo}
@@ -72,7 +71,7 @@ export default function ClasesYoga() {
             />
             {/* Foto en forma de hoja */}
             <div
-              className="relative w-full overflow-hidden shadow-[0_30px_60px_-25px_rgba(125,92,124,0.45)]"
+              className="relative w-full overflow-hidden shadow-[0_30px_60px_-25px_rgba(128,104,139,0.45)]"
               style={{ aspectRatio: "4/5", borderRadius: HOJA }}
             >
               <Image

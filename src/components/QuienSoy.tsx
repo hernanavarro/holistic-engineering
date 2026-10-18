@@ -26,7 +26,7 @@ export default function QuienSoy() {
         />
         {/* Foto en forma de arco */}
         <div
-          className="relative w-full overflow-hidden shadow-[0_30px_60px_-25px_rgba(125,92,124,0.45)]"
+          className="relative w-full overflow-hidden shadow-[0_30px_60px_-25px_rgba(128,104,139,0.45)]"
           style={{ aspectRatio: "3/4", borderRadius: ARCO }}
         >
           <Image

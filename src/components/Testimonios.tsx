@@ -25,10 +25,10 @@ export default function Testimonios() {
           {testimonios.map((t, i) => (
             <div
               key={i}
-              className="relative bg-lavanda-pale border border-[rgba(125,92,124,0.1)]
+              className="relative bg-lavanda-pale border border-[rgba(128,104,139,0.1)]
                          p-8 rounded-sm flex flex-col gap-5
                          transition-all duration-300 hover:-translate-y-1
-                         hover:shadow-[0_16px_36px_rgba(125,92,124,0.08)]"
+                         hover:shadow-[0_16px_36px_rgba(128,104,139,0.08)]"
             >
               {/* Comilla decorativa */}
               <span

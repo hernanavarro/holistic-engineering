@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-16 py-5
                  bg-[rgba(253,252,251,0.92)] backdrop-blur-md
-                 border-b border-[rgba(125,92,124,0.12)] transition-all duration-300
+                 border-b border-[rgba(128,104,139,0.12)] transition-all duration-300
                  max-lg:px-8 max-md:px-6"
     >
       {/* Logo */}

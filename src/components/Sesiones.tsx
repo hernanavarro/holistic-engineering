@@ -30,9 +30,9 @@ export default function Sesiones() {
           {sesiones.map((s) => (
             <div
               key={s.numero}
-              className="relative bg-blanco border border-[rgba(125,92,124,0.1)] p-10 rounded-sm
+              className="relative bg-blanco border border-[rgba(128,104,139,0.1)] p-10 rounded-sm
                          overflow-hidden transition-all duration-300 hover:-translate-y-1.5
-                         hover:shadow-[0_20px_40px_rgba(125,92,124,0.1)]"
+                         hover:shadow-[0_20px_40px_rgba(128,104,139,0.1)]"
             >
               {/* Barra superior */}
               <span

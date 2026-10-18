@@ -12,16 +12,15 @@ export default function Formaciones() {
         </p>
         <span className="block w-12 h-px bg-arena mb-8" />
         <h2
-          className="font-light leading-[1.2] text-blanco mb-6"
+          className="font-titulo font-medium leading-[1.15] tracking-[-0.015em] text-blanco mb-6"
           style={{
-            fontFamily: "var(--font-cormorant), serif",
-            fontSize: "clamp(2rem, 3.5vw, 3rem)",
+            fontSize: "clamp(1.75rem, 3vw, 2.6rem)",
           }}
         >
           {formacionesHeader.titulo[0]}
           <br />
           {formacionesHeader.titulo[1]}
-          <em className="italic text-arena">{formacionesHeader.titulo[2]}</em>
+          <em className="titulo-acento !text-arena">{formacionesHeader.titulo[2]}</em>
         </h2>
         <p
           className="italic leading-[1.85] max-w-[560px] mb-14"
@@ -38,8 +37,8 @@ export default function Formaciones() {
           {formaciones.map((f) => (
             <div
               key={f.titulo}
-              className="border border-[rgba(201,187,154,0.2)] p-10 rounded-sm
-                         transition-all duration-300 hover:border-[rgba(201,187,154,0.5)]
+              className="border border-[rgba(212,194,158,0.2)] p-10 rounded-sm
+                         transition-all duration-300 hover:border-[rgba(212,194,158,0.5)]
                          hover:bg-[rgba(255,255,255,0.03)]"
             >
               <div className="text-[1.8rem] mb-5" aria-hidden="true">✦</div>
@@ -47,10 +46,9 @@ export default function Formaciones() {
                 {f.nombre}
               </div>
               <div
-                className="font-light text-blanco mb-3"
+                className="font-titulo font-medium tracking-[-0.01em] text-blanco mb-3"
                 style={{
-                  fontFamily: "var(--font-cormorant), serif",
-                  fontSize: "1.5rem",
+                  fontSize: "1.3rem",
                 }}
               >
                 {f.titulo}

@@ -31,11 +31,11 @@ export default function Membresia() {
             <div
               key={m.nombre}
               className={`flex flex-col gap-5 p-10 rounded-sm border transition-all duration-300
-                          hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(125,92,124,0.1)]
+                          hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(128,104,139,0.1)]
                           ${
                             m.destacada
                               ? "bg-violeta border-violeta text-blanco"
-                              : "bg-blanco border-[rgba(125,92,124,0.12)]"
+                              : "bg-blanco border-[rgba(128,104,139,0.12)]"
                           }`}
             >
               <div
@@ -45,8 +45,7 @@ export default function Membresia() {
                 {m.tipo}
               </div>
               <div
-                className={`font-light text-[1.6rem] ${m.destacada ? "text-blanco" : "text-negro"}`}
-                style={{ fontFamily: "var(--font-cormorant), serif" }}
+                className={`font-titulo font-medium tracking-[-0.01em] text-[1.35rem] ${m.destacada ? "text-blanco" : "text-negro"}`}
               >
                 {m.nombre}
               </div>

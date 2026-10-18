@@ -29,7 +29,7 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(26,22,26,0.62) 0%, rgba(26,22,26,0.5) 55%, rgba(26,22,26,0.38) 100%)",
+            "linear-gradient(to bottom, rgba(22,22,22,0.62) 0%, rgba(22,22,22,0.5) 55%, rgba(22,22,22,0.38) 100%)",
         }}
         aria-hidden="true"
       />
@@ -44,16 +44,15 @@ export default function Hero() {
         <p className="eyebrow !text-lavanda">{hero.eyebrow}</p>
 
         <h1
-          className="font-light leading-[1.15] text-blanco mb-7 drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
+          className="font-titulo font-medium leading-[1.1] tracking-[-0.02em] text-blanco mb-7 drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           style={{
-            fontFamily: "var(--font-cormorant), serif",
-            fontSize: "clamp(2.6rem, 5.5vw, 4.2rem)",
+            fontSize: "clamp(2.2rem, 4.6vw, 3.6rem)",
           }}
         >
           {hero.titulo[0]}
           <br />
           {hero.titulo[1]}
-          <em className="italic text-lavanda">{hero.titulo[2]}</em>
+          <em className="titulo-acento !text-lavanda-viva !font-medium">{hero.titulo[2]}</em>
           {hero.titulo[3]}
         </h1>
 

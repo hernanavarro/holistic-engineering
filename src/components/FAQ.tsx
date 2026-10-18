@@ -19,7 +19,7 @@ function AccordionItem({
   const id = `faq-${index}`;
 
   return (
-    <div className="border-b border-[rgba(125,92,124,0.15)] last:border-none">
+    <div className="border-b border-[rgba(128,104,139,0.15)] last:border-none">
       <button
         id={`${id}-trigger`}
         aria-expanded={isOpen}
@@ -40,7 +40,7 @@ function AccordionItem({
 
         {/* Ícono +/- */}
         <span
-          className={`shrink-0 w-7 h-7 rounded-full border border-[rgba(125,92,124,0.3)]
+          className={`shrink-0 w-7 h-7 rounded-full border border-[rgba(128,104,139,0.3)]
                       flex items-center justify-center text-violeta transition-all duration-300
                       group-hover:border-violeta
                       ${isOpen ? "bg-violeta text-blanco border-violeta rotate-45" : ""}`}
