@@ -274,7 +274,7 @@ export const faqs = [
 // ─── WHATSAPP ─────────────────────────────────────────────────────────────────
 
 export const whatsapp = {
-  numero: "5493516000000", // reemplazar con el número real
+  numero: "5493515171023",
   mensaje: "Hola Jimena! Me gustaría saber más sobre tus servicios 🌿",
 };
 
