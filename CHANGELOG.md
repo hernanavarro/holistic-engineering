@@ -4,6 +4,24 @@ All notable changes to this project are documented here. Format: version + date,
 
 ## [Unreleased]
 
+## [0.0.4] - 2026-10-26
+
+### Added
+- Site restructured from a single page into a home + one page per section: `/sesiones`, `/yoga`, `/formaciones`, `/membresias` (route group `src/app/(secciones)`, with per-page titles and descriptions).
+- "La propuesta" block on the home with one card per section linking to its page.
+- Closing call-to-action ("¿Sentís que es tu momento?", light weight, compact) with a "Contactame" WhatsApp button at the end of every section page (not on the home).
+
+### Changed
+- Navbar, footer and WhatsApp button moved to the root layout so they appear on every page.
+- Menu order is now Sesiones · Yoga · Formaciones · Membresías · Quién soy; "Quién soy" goes to `/#quien-soy` from any page. The current section is highlighted, the logo links to the home and the mobile menu closes on navigation.
+- Real WhatsApp number (+54 9 351 517-1023) for the floating button, navbar and closing CTA.
+- Hero button "Conocer el proceso" now scrolls to "La propuesta".
+- Navbar button "Comenzar" replaced by "Contacto" (opens WhatsApp).
+- Menu, footer and home cards are driven by a single `secciones` list in `src/data/content.ts`; adding a section means creating its page and adding it there.
+- Home now shows Hero, Quién soy, La propuesta, Testimonios and FAQ; Sesiones, Yoga, Formaciones and Membresías moved to their own pages.
+
+## [0.0.3] - 2026-10-18
+
 ### Changed
 - Brand palette aligned to the identity manual: violeta `#80688B`, lavanda `#E6DFEC`, crema `#F7F6F4`, arena `#D4C29E`, negro `#161616` (light/mid variants re-derived; hard-coded rgba values updated).
 - Hero, section and card titles now use the sans title font (stand-in for Neue Haas Grotesk Display Pro, per the manual); the emphasized word keeps Cormorant Garamond italic as an accent. Body copy stays in Cormorant Garamond.

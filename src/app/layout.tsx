@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/src/components/Navbar";
+import Footer from "@/src/components/Footer";
+import WhatsAppButton from "@/src/components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +21,10 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Ing. Holística by Jimena Navarro",
+  title: {
+    default: "Ing. Holística by Jimena Navarro",
+    template: "%s · Ing. Holística by Jimena Navarro",
+  },
   description:
     "Acompañamiento holístico para mujeres: Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y más.",
   icons: {
@@ -35,7 +41,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${inter.variable} ${cormorant.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

@@ -4,7 +4,7 @@ import { footerLinks } from "@/src/data/content";
 
 export default function Footer() {
   return (
-    <footer className="bg-negro text-[rgba(255,255,255,0.55)] px-16 py-16 text-center max-md:px-8 max-md:py-12">
+    <footer id="contacto" className="bg-negro text-[rgba(255,255,255,0.55)] px-16 py-16 text-center max-md:px-8 max-md:py-12">
       {/* Logo */}
       <div className="flex items-center justify-center gap-3 mb-6">
         <LogoIcon size={32} />

@@ -8,7 +8,7 @@ export default function QuienSoy() {
   return (
     <section
       id="quien-soy"
-      className="bg-blanco max-w-[1200px] mx-auto grid grid-cols-2 gap-24 items-center
+      className="scroll-mt-20 bg-blanco max-w-[1200px] mx-auto grid grid-cols-2 gap-24 items-center
                  px-16 py-28 max-lg:grid-cols-1 max-lg:gap-12 max-lg:px-10 max-lg:py-20 max-md:px-6"
     >
       {/* Foto */}

@@ -1,14 +1,46 @@
 // src/data/content.ts
-// Centraliza todo el contenido de la landing page.
+// Centraliza todo el contenido del sitio.
 
 // ─── NAVEGACIÓN ──────────────────────────────────────────────────────────────
 
+// Secciones del sitio: cada una es una página con su propio path.
+// Para sumar una sección nueva: crear la página en src/app/(secciones)/<path>
+// y agregarla acá (aparece sola en el menú, el footer y la home).
+export const secciones = [
+  {
+    label: "Sesiones",
+    href: "/sesiones",
+    eyebrow: "Individuales · Mentoring",
+    resumen:
+      "Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y Biodecodificación para integrar lo que no termina de acomodarse.",
+  },
+  {
+    label: "Yoga",
+    href: "/yoga",
+    eyebrow: "Presencial · Online",
+    resumen:
+      "Clases semanales, grabadas, talleres y retiros. Una práctica de reconexión con el cuerpo y la respiración.",
+  },
+  {
+    label: "Formaciones",
+    href: "/formaciones",
+    eyebrow: "Reiki · Registros",
+    resumen:
+      "Programas para quienes sienten el llamado a acompañar a otras desde estas herramientas.",
+  },
+  {
+    label: "Membresías",
+    href: "/membresias",
+    eyebrow: "Semilla · Raíz · Floración",
+    resumen:
+      "El espacio para sostener el proceso entre encuentros, con contenido, práctica y comunidad.",
+  },
+];
+
+// Menú: las secciones + "Quién soy", que baja a esa parte de la home.
 export const navLinks = [
-  { label: "Quién soy", href: "#quien-soy" },
-  { label: "Sesiones", href: "#sesiones" },
-  { label: "Yoga", href: "#clases-yoga" },
-  { label: "Formaciones", href: "#formaciones" },
-  { label: "Membresía", href: "#membresia" },
+  ...secciones.map(({ label, href }) => ({ label, href })),
+  { label: "Quién soy", href: "/#quien-soy" },
 ];
 
 // ─── HERO ────────────────────────────────────────────────────────────────────
@@ -19,8 +51,8 @@ export const hero = {
   // índice 2 es la frase en itálico/color de acento
   subtitulo:
     "Acompaño a personas que ya hicieron mucho y aún sienten que algo no termina de integrarse.",
-  ctaPrimario: { label: "Quiero acompañamiento", href: "#sesiones" },
-  ctaSecundario: { label: "Conocer el proceso", href: "#quien-soy" },
+  ctaPrimario: { label: "Quiero acompañamiento", href: "/sesiones" },
+  ctaSecundario: { label: "Conocer el proceso", href: "/#propuesta" },
 };
 
 // ─── QUIÉN SOY ────────────────────────────────────────────────────────────────
@@ -271,6 +303,24 @@ export const faqs = [
   },
 ];
 
+// ─── PROPUESTA (home) ─────────────────────────────────────────────────────────
+// Bloque de la home que presenta la propuesta y lleva a cada sección.
+
+export const propuestaHeader = {
+  eyebrow: "La propuesta",
+  titulo: ["Distintos caminos", "para un mismo ", "proceso"],
+  texto:
+    "Según el momento que estés atravesando, podemos trabajar en sesiones individuales, en la práctica de yoga, en una formación o sosteniendo el proceso en el tiempo.",
+};
+
+// ─── CIERRE ──────────────────────────────────────────────────────────────────
+// Llamado a la acción al final de cada página de sección.
+
+export const cierre = {
+  titulo: ["¿Sentís que es ", "tu momento", "?"],
+  cta: "Contactame",
+};
+
 // ─── WHATSAPP ─────────────────────────────────────────────────────────────────
 
 export const whatsapp = {
@@ -278,13 +328,8 @@ export const whatsapp = {
   mensaje: "Hola Jimena! Me gustaría saber más sobre tus servicios 🌿",
 };
 
+export const whatsappUrl = `https://wa.me/${whatsapp.numero}?text=${encodeURIComponent(whatsapp.mensaje)}`;
+
 // ─── FOOTER ──────────────────────────────────────────────────────────────────
 
-export const footerLinks = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Quién soy", href: "#quien-soy" },
-  { label: "Sesiones", href: "#sesiones" },
-  { label: "Yoga", href: "#clases-yoga" },
-  { label: "Formaciones", href: "#formaciones" },
-  { label: "Membresía", href: "#membresia" },
-];
+export const footerLinks = [{ label: "Inicio", href: "/" }, ...navLinks];

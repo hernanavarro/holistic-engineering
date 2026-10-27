@@ -1,11 +1,9 @@
-import { whatsapp } from "@/src/data/content";
+import { whatsappUrl } from "@/src/data/content";
 
 export default function WhatsAppButton() {
-  const url = `https://wa.me/${whatsapp.numero}?text=${encodeURIComponent(whatsapp.mensaje)}`;
-
   return (
     <a
-      href={url}
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"

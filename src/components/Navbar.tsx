@@ -1,22 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import LogoIcon from "./LogoIcon";
-import { navLinks } from "@/src/data/content";
+import { navLinks, whatsappUrl } from "@/src/data/content";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Cierra el menú mobile al cambiar de página
+  useEffect(() => setOpen(false), [pathname]);
+
+  const isActive = (href: string) => !href.startsWith("/#") && pathname.startsWith(href);
 
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-16 py-5
                  bg-[rgba(253,252,251,0.92)] backdrop-blur-md
                  border-b border-[rgba(128,104,139,0.12)] transition-all duration-300
-                 max-lg:px-8 max-md:px-6"
+                 max-xl:px-10 max-md:px-6"
     >
-      {/* Logo */}
-      <Link href="#inicio" className="flex items-center gap-3 no-underline">
+      {/* Logo → home */}
+      <Link href="/" className="flex items-center gap-3 no-underline" aria-label="Ir al inicio">
         <LogoIcon size={38} />
         <span className="flex flex-col leading-tight">
           <span className="font-titulo font-normal text-[0.9rem] tracking-[0.08em] text-negro">
@@ -32,34 +39,44 @@ export default function Navbar() {
       </Link>
 
       {/* Links — desktop */}
-      <ul className="flex gap-10 list-none max-md:hidden">
+      <ul className="flex items-center gap-9 list-none max-lg:gap-6 max-md:hidden">
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link
               href={link.href}
-              className="font-titulo font-light text-[0.78rem] tracking-[0.12em] uppercase
-                         no-underline text-gris hover:text-violeta transition-colors duration-300"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`font-titulo text-[0.78rem] tracking-[0.12em] uppercase no-underline
+                          transition-colors duration-300 hover:text-violeta
+                          border-b pb-1
+                          ${
+                            isActive(link.href)
+                              ? "text-violeta font-normal border-violeta"
+                              : "text-gris font-light border-transparent"
+                          }`}
             >
               {link.label}
             </Link>
           </li>
         ))}
         <li>
-          <Link
-            href="#sesiones"
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-titulo font-normal text-[0.78rem] tracking-[0.12em] uppercase
                        no-underline bg-violeta text-blanco px-5 py-2 rounded-full
                        hover:bg-violeta-mid transition-colors duration-300"
           >
-            Comenzar
-          </Link>
+            Contacto
+          </a>
         </li>
       </ul>
 
       {/* Hamburger — mobile */}
       <button
         className="hidden max-md:flex flex-col gap-[5px] cursor-pointer bg-transparent border-none p-1"
-        aria-label="Abrir menú"
+        aria-label={open ? "Cerrar menú" : "Abrir menú"}
+        aria-expanded={open}
         onClick={() => setOpen(!open)}
       >
         <span
@@ -82,21 +99,25 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="font-titulo font-light text-[0.82rem] tracking-[0.15em] uppercase
-                         no-underline text-gris hover:text-violeta transition-colors"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`font-titulo text-[0.82rem] tracking-[0.15em] uppercase no-underline
+                          hover:text-violeta transition-colors
+                          ${isActive(link.href) ? "text-violeta font-normal" : "text-gris font-light"}`}
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            href="#sesiones"
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="font-titulo font-normal text-[0.78rem] tracking-[0.12em] uppercase
                        no-underline bg-violeta text-blanco px-7 py-2.5 rounded-full
                        hover:bg-violeta-mid transition-colors"
           >
-            Comenzar
-          </Link>
+            Contacto
+          </a>
         </div>
       )}
     </nav>
