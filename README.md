@@ -21,6 +21,6 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 Other scripts: `npm run build`, `npm run start`, `npm run lint`.
 
-To add a new section: create `src/app/(secciones)/<path>/page.tsx` and add it to the `secciones` list in `src/data/content.ts` (it then shows up in the menu, the footer and the home).
+To add a new section: create `src/app/(secciones)/<path>/page.tsx` and add it to the `secciones` list in `src/data/content.ts` (it then shows up in the menu and the home).
 
 See [CHANGELOG.md](CHANGELOG.md) for a record of notable changes.

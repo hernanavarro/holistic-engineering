@@ -4,6 +4,11 @@ All notable changes to this project are documented here. Format: version + date,
 
 ## [Unreleased]
 
+### Changed
+- Footer simplified to a single row: logo + name (links to the home) on the left, copyright in the middle, social icons on the right; stacked and centered on mobile. The section menu was removed from the footer (the sticky navbar already covers it).
+- Footer icons no longer sit inside circles and are larger (32px), arena turning white on hover.
+- Real social links set: Instagram, Facebook, YouTube and TikTok (@ingenieria.holistica).
+
 ### Added
 - Contact and social icons in the footer, bottom right (copyright moves to the bottom left, above it a thin divider; centered and stacked on mobile). Brand colors: arena outline icons on black, violeta on hover. Instagram, Facebook, YouTube and TikTok show only when their link is set in the `redes` list in `src/data/content.ts`; WhatsApp always shows and opens the chat with the default message.
 

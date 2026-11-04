@@ -5,7 +5,7 @@
 
 // Secciones del sitio: cada una es una página con su propio path.
 // Para sumar una sección nueva: crear la página en src/app/(secciones)/<path>
-// y agregarla acá (aparece sola en el menú, el footer y la home).
+// y agregarla acá (aparece sola en el menú y la home).
 export const secciones = [
   {
     label: "Sesiones",
@@ -331,16 +331,13 @@ export const whatsapp = {
 export const whatsappUrl = `https://wa.me/${whatsapp.numero}?text=${encodeURIComponent(whatsapp.mensaje)}`;
 
 // ─── REDES ───────────────────────────────────────────────────────────────────
-// Íconos del footer, abajo a la derecha (WhatsApp se agrega siempre).
+// Íconos del footer, a la derecha (WhatsApp se agrega siempre).
 // Una red con url vacía no se muestra.
 
 export const redes: { red: "instagram" | "facebook" | "youtube" | "tiktok"; label: string; url: string }[] = [
-  { red: "instagram", label: "Instagram", url: "" },
-  { red: "facebook", label: "Facebook", url: "" },
-  { red: "youtube", label: "YouTube", url: "" },
-  { red: "tiktok", label: "TikTok", url: "" },
+  { red: "instagram", label: "Instagram", url: "https://www.instagram.com/ingenieria.holistica" },
+  { red: "facebook", label: "Facebook", url: "https://www.facebook.com/ingenieriaholistica1" },
+  { red: "youtube", label: "YouTube", url: "https://www.youtube.com/@ingenieria.holistica" },
+  { red: "tiktok", label: "TikTok", url: "https://www.tiktok.com/@ingenieria.holistica" },
 ];
 
-// ─── FOOTER ──────────────────────────────────────────────────────────────────
-
-export const footerLinks = [{ label: "Inicio", href: "/" }, ...navLinks];

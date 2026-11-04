@@ -42,7 +42,7 @@ export default function RedesSociales() {
   ];
 
   return (
-    <ul className="flex items-center gap-3 list-none" aria-label="Redes y contacto">
+    <ul className="flex items-center gap-5 list-none" aria-label="Redes y contacto">
         {links.map((l) => (
           <li key={l.red}>
             <a
@@ -51,11 +51,10 @@ export default function RedesSociales() {
               rel="noopener noreferrer"
               aria-label={l.red === "whatsapp" ? "Escribime por WhatsApp" : `Seguime en ${l.label}`}
               title={l.label}
-              className="w-9 h-9 rounded-full flex items-center justify-center
-                         text-arena border border-[rgba(212,194,158,0.35)]
-                         transition-all duration-300 hover:bg-violeta hover:border-violeta hover:text-blanco"
+              className="block w-8 h-8 text-arena transition-colors duration-300 hover:text-blanco
+                         [&>svg]:w-full [&>svg]:h-full"
             >
-              <span className="w-4 h-4 [&>svg]:w-full [&>svg]:h-full">{iconos[l.red]}</span>
+              {iconos[l.red]}
             </a>
           </li>
         ))}
