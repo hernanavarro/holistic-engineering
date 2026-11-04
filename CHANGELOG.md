@@ -2,7 +2,7 @@
 
 All notable changes to this project are documented here. Format: version + date, most recent first.
 
-## [Unreleased]
+## [0.1.0] - 2026-11-04
 
 ### Changed
 - "Quién soy" text updated with Jimena's wording.
