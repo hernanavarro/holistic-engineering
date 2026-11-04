@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LogoIcon from "./LogoIcon";
+import RedesSociales from "./RedesSociales";
 import { footerLinks } from "@/src/data/content";
 
 export default function Footer() {
@@ -36,13 +37,19 @@ export default function Footer() {
         ))}
       </ul>
 
-      {/* Copyright */}
-      <p
-        className="italic opacity-35 text-[0.82rem]"
-        style={{ fontFamily: "var(--font-cormorant), serif" }}
+      {/* Copyright + redes */}
+      <div
+        className="max-w-[1100px] mx-auto pt-6 border-t border-[rgba(255,255,255,0.08)]
+                   flex items-center justify-between gap-6 max-md:flex-col-reverse max-md:items-center"
       >
-        © {new Date().getFullYear()} · All rights reserved
-      </p>
+        <p
+          className="italic opacity-35 text-[0.82rem]"
+          style={{ fontFamily: "var(--font-cormorant), serif" }}
+        >
+          © {new Date().getFullYear()} · All rights reserved
+        </p>
+        <RedesSociales />
+      </div>
     </footer>
   );
 }

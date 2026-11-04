@@ -4,6 +4,12 @@ All notable changes to this project are documented here. Format: version + date,
 
 ## [Unreleased]
 
+### Added
+- Contact and social icons in the footer, bottom right (copyright moves to the bottom left, above it a thin divider; centered and stacked on mobile). Brand colors: arena outline icons on black, violeta on hover. Instagram, Facebook, YouTube and TikTok show only when their link is set in the `redes` list in `src/data/content.ts`; WhatsApp always shows and opens the chat with the default message.
+
+### Removed
+- Floating green WhatsApp button (its role moves to the WhatsApp icon in the footer; the navbar "Contacto" and the closing "Contactame" still open WhatsApp).
+
 ## [0.0.4] - 2026-10-26
 
 ### Added

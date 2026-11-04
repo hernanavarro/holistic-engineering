@@ -330,6 +330,17 @@ export const whatsapp = {
 
 export const whatsappUrl = `https://wa.me/${whatsapp.numero}?text=${encodeURIComponent(whatsapp.mensaje)}`;
 
+// ─── REDES ───────────────────────────────────────────────────────────────────
+// Íconos del footer, abajo a la derecha (WhatsApp se agrega siempre).
+// Una red con url vacía no se muestra.
+
+export const redes: { red: "instagram" | "facebook" | "youtube" | "tiktok"; label: string; url: string }[] = [
+  { red: "instagram", label: "Instagram", url: "" },
+  { red: "facebook", label: "Facebook", url: "" },
+  { red: "youtube", label: "YouTube", url: "" },
+  { red: "tiktok", label: "TikTok", url: "" },
+];
+
 // ─── FOOTER ──────────────────────────────────────────────────────────────────
 
 export const footerLinks = [{ label: "Inicio", href: "/" }, ...navLinks];
