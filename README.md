@@ -2,7 +2,7 @@
 
 Website for Jimena Navarro — Ingeniería Holística. A Next.js site with a general home and one page per section (Sesiones, Yoga, Formaciones, Membresías), presenting her holistic sessions (Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones, and more).
 
-Deployed on Vercel: [holistic-engineering.vercel.app](https://holistic-engineering.vercel.app)
+Live at [ingenieriaholistica.com](https://ingenieriaholistica.com) (deployed on Vercel; also available at [holistic-engineering.vercel.app](https://holistic-engineering.vercel.app))
 
 ## Stack
 
