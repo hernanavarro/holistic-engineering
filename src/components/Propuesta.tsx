@@ -33,7 +33,7 @@ export default function Propuesta() {
               key={s.href}
               href={s.href}
               className="group relative flex flex-col bg-blanco border border-[rgba(128,104,139,0.1)]
-                         p-9 rounded-sm no-underline overflow-hidden transition-all duration-300
+                         p-9 rounded-lg no-underline overflow-hidden transition-all duration-300
                          hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(128,104,139,0.1)]"
             >
               <span

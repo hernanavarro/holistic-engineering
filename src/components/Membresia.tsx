@@ -30,7 +30,7 @@ export default function Membresia() {
           {membresias.map((m) => (
             <div
               key={m.nombre}
-              className={`flex flex-col gap-5 p-10 rounded-sm border transition-all duration-300
+              className={`flex flex-col gap-5 p-10 rounded-lg border transition-all duration-300
                           hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(128,104,139,0.1)]
                           ${
                             m.destacada

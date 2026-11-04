@@ -30,7 +30,7 @@ export default function Sesiones() {
           {sesiones.map((s) => (
             <div
               key={s.numero}
-              className="relative flex flex-col bg-blanco border border-[rgba(128,104,139,0.1)] p-10 rounded-sm
+              className="relative flex flex-col bg-blanco border border-[rgba(128,104,139,0.1)] p-10 rounded-lg
                          overflow-hidden transition-all duration-300 hover:-translate-y-1.5
                          hover:shadow-[0_20px_40px_rgba(128,104,139,0.1)]"
             >
@@ -81,7 +81,7 @@ export default function Sesiones() {
 
         {/* Banner Alquimia */}
         <div
-          className="mt-12 bg-violeta text-blanco p-14 rounded-sm flex items-center justify-between gap-8 flex-wrap"
+          className="mt-12 bg-violeta text-blanco p-14 rounded-xl flex items-center justify-between gap-8 flex-wrap"
         >
           <div>
             <div className="font-titulo font-light text-[0.8rem] tracking-[0.15em] uppercase opacity-75 mb-1">

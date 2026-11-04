@@ -37,7 +37,7 @@ export default function Formaciones() {
           {formaciones.map((f) => (
             <div
               key={f.titulo}
-              className="border border-[rgba(255,255,255,0.22)] p-10 rounded-sm
+              className="border border-[rgba(255,255,255,0.22)] p-10 rounded-lg
                          transition-all duration-300 hover:border-[rgba(234,224,204,0.6)]
                          hover:bg-[rgba(255,255,255,0.06)]"
             >
