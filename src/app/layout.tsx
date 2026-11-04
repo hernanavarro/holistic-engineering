@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · Ing. Holística by Jimena Navarro",
   },
   description:
-    "Acompañamiento holístico para mujeres: Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y más.",
+    "Acompañamiento holístico: Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y más.",
   icons: {
     icon: "https://odxbwxmixquriirb.public.blob.vercel-storage.com/icon.png",
     apple:

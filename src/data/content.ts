@@ -12,7 +12,7 @@ export const secciones = [
     href: "/sesiones",
     eyebrow: "Individuales · Mentoring",
     resumen:
-      "Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y Biodecodificación para integrar lo que no termina de acomodarse.",
+      "Reiki, Registros Akáshicos, Tarot Evolutivo, Constelaciones y Biodescodificación para integrar lo que no termina de acomodarse.",
   },
   {
     label: "Yoga",
@@ -26,7 +26,7 @@ export const secciones = [
     href: "/formaciones",
     eyebrow: "Reiki · Registros",
     resumen:
-      "Programas para quienes sienten el llamado a acompañar a otras desde estas herramientas.",
+      "Programas para quienes sienten el llamado a acompañar a otras personas desde estas herramientas.",
   },
   {
     label: "Membresías",
@@ -61,8 +61,8 @@ export const quienSoy = {
   eyebrow: "Quién soy",
   titulo: ["Una ingeniera que", "aprendió a ", "integrar"],
   parrafos: [
-    "Soy Jimena Navarro. Llego a este trabajo desde la ingeniería industrial y desde mi propio proceso de transformación personal — ese largo camino donde las herramientas técnicas se encontraron con las espirituales y, en vez de contradecirse, se completaron.",
-    "Creé el Método Ingeniería Holística para acompañar a mujeres que ya buscan, que ya saben que algo tiene que cambiar, pero que todavía no encontraron el proceso que sostenga ese cambio de verdad.",
+    "Soy Jimena Navarro, y fundé este espacio desde la ingeniería industrial y mi propio proceso de transformación personal — ese largo camino donde las herramientas técnicas se encontraron con las espirituales y, en vez de contradecirse, se completaron y fusionaron.",
+    "Creé el Método Ingeniería Holística para acompañar a personas que buscan y saben que algo tiene que cambiar y transformarse, pero que todavía no encontraron el proceso que sostenga ese cambio de verdad.",
   ],
   valores: [
     "No te vendo herramientas — te acompaño en un proceso.",
@@ -80,36 +80,49 @@ export const sesionesHeader = {
     "Cada sesión es un espacio para integrar lo que no termina de acomodarse. Trabajamos desde múltiples planos según lo que el proceso pida.",
 };
 
+// precio: "$ —" hasta tener los valores reales
 export const sesiones = [
   {
     numero: "01",
     nombre: "Reiki Usui",
-    desc: "Trabajo energético para liberar bloqueos, restaurar el flujo y acompañar el cuerpo en sus procesos de integración.",
+    desc: "Armonizamos tu cuerpo, liberando bloqueos, restaurando el flujo de la energía y acompañando todo el proceso de integración.",
+    precio: "$ —",
   },
   {
     numero: "02",
     nombre: "Registros Akáshicos",
-    desc: "Acceso a la información del alma para comprender patrones que se repiten y encontrar claridad en los momentos de encrucijada.",
+    desc: "Accedemos al libro de tu alma para obtener la información correcta y perfecta para tu evolución hoy. Nos conectamos con tu ángel de la guarda y le hacemos todas las preguntas que necesites y sientas.",
+    precio: "$ —",
   },
   {
     numero: "03",
     nombre: "Tarot Evolutivo",
-    desc: "El tarot como espejo — no para predecir, sino para ver con más claridad lo que ya está en movimiento en tu vida.",
+    desc: "A través de las cartas, usamos el tarot como herramienta para ver con más claridad eso que hoy no estás pudiendo ver, para poder integrar y avanzar.",
+    precio: "$ —",
   },
   {
     numero: "04",
-    nombre: "Constelaciones",
-    desc: "Trabajo con los sistemas familiares y relacionales que influyen en tus patrones, abriendo espacio para nuevas dinámicas.",
+    nombre: "Constelaciones Familiares",
+    desc: "Con el tema que más energía te consume hoy, buscamos traer a la consciencia eso que nos muestra el campo cuántico disponible para sanar e integrar, practicando el asentimiento y la aceptación.",
+    precio: "$ —",
   },
   {
     numero: "05",
-    nombre: "Biodecodificación",
-    desc: "Lectura del lenguaje del cuerpo — cómo los conflictos emocionales y simbólicos se expresan a nivel físico y cómo integrarlos.",
+    nombre: "Biodescodificación",
+    desc: "Tratamos el tema, emoción o conflicto que más energía te consuma hoy, yendo desde ese conflicto desencadenante al programante.",
+    precio: "$ —",
   },
   {
     numero: "06",
-    nombre: "Sesión Integradora",
-    desc: "Combinamos las herramientas que tu proceso necesite en un único encuentro personalizado y profundo.",
+    nombre: "Limpiezas Energéticas",
+    desc: "Pueden realizarse a personas, vehículos, vínculos, relaciones, negocios, casas, espacios y trámites. Vamos a limpiar lo que hoy esté generando un bloqueo o impedimento para avanzar.",
+    precio: "$ —",
+  },
+  {
+    numero: "07",
+    nombre: "Coaching Holístico",
+    desc: "Integramos cuerpo, mente, alma, lo espiritual, las emociones y la energía para trabajar el tema que hoy más te preocupa, en sesiones individuales que combinan distintas técnicas y herramientas.",
+    precio: "$ —",
   },
 ];
 
@@ -117,7 +130,7 @@ export const alquimia = {
   sub: "Mentoring · 3 meses",
   titulo: "Programa Alquimia",
   texto:
-    "Para las que ya saben que los cambios de fondo no se hacen solos ni en una sesión. Seis encuentros de 90 minutos para trabajar en profundidad y con continuidad real.",
+    "Para quienes ya saben que los cambios de fondo no se hacen solos ni en una sesión. Seis encuentros de 90 minutos para trabajar en profundidad y con continuidad real.",
   cta: { label: "Quiero saber más", href: "#" },
 };
 
@@ -154,7 +167,7 @@ export const formacionesHeader = {
   eyebrow: "Formaciones",
   titulo: ["Para las que quieren", "transmitir lo que ", "transformaron"],
   texto:
-    "Programas de formación para quienes sienten el llamado a acompañar a otras desde estas herramientas.",
+    "Programas de formación para quienes sienten el llamado a acompañar a otras personas desde estas herramientas.",
 };
 
 export const formaciones = [
@@ -245,7 +258,7 @@ export const testimonios = [
   },
   {
     nombre: "Sofía P.",
-    cargo: "Tarot Evolutivo & Biodecodificación",
+    cargo: "Tarot Evolutivo & Biodescodificación",
     texto:
       "Vine escéptica y me fui con herramientas reales. El tarot evolutivo me ayudó a ver mis propios movimientos con mucha más claridad.",
   },
@@ -274,12 +287,12 @@ export const faqs = [
   {
     pregunta: "¿Necesito tener experiencia previa en herramientas holísticas?",
     respuesta:
-      "No. Trabajo con mujeres en distintos momentos del camino — desde las que no saben nada del mundo holístico hasta las que llevan años explorándolo. Lo que importa es que algo en vos está buscando un cambio real.",
+      "No. Trabajo con personas en distintos momentos del camino — desde quienes no saben nada del mundo holístico hasta quienes llevan años explorándolo. Lo que importa es que algo en vos está buscando un cambio real.",
   },
   {
     pregunta: "¿Las sesiones son presenciales u online?",
     respuesta:
-      "Trabajo en ambas modalidades. Las sesiones de Reiki, Constelaciones y Tarot pueden hacerse de forma presencial en Córdoba o vía videollamada. Los Registros Akáshicos y la Biodecodificación funcionan igual de profundo en remoto.",
+      "Trabajo en ambas modalidades. Las sesiones de Reiki, Constelaciones y Tarot pueden hacerse de forma presencial en Córdoba o vía videollamada. Los Registros Akáshicos y la Biodescodificación funcionan igual de profundo en remoto.",
   },
   {
     pregunta: "¿Cómo sé qué tipo de sesión me conviene?",

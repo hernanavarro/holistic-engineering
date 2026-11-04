@@ -5,6 +5,10 @@ All notable changes to this project are documented here. Format: version + date,
 ## [Unreleased]
 
 ### Changed
+- "Quién soy" text updated with Jimena's wording.
+- Sesiones: each card now uses Jimena's description of the therapy and shows a price at the bottom (`precio` in `sesiones`, `src/data/content.ts`; "$ —" until real prices are set). Added Limpiezas Energéticas and Coaching Holístico (replaces Sesión Integradora); Constelaciones renamed Constelaciones Familiares.
+- "Biodescodificación" spelling used across the site.
+- Gender-neutral wording across the site ("personas"/"quienes" instead of "mujeres"/"las que"), including the site description.
 - Footer simplified to a single row: logo + name (links to the home) on the left, copyright in the middle, social icons on the right; stacked and centered on mobile. The section menu was removed from the footer (the sticky navbar already covers it).
 - Footer icons no longer sit inside circles and are larger (32px), arena turning white on hover.
 - Real social links set: Instagram, Facebook, YouTube and TikTok (@ingenieria.holistica).

@@ -30,7 +30,7 @@ export default function Sesiones() {
           {sesiones.map((s) => (
             <div
               key={s.numero}
-              className="relative bg-blanco border border-[rgba(128,104,139,0.1)] p-10 rounded-sm
+              className="relative flex flex-col bg-blanco border border-[rgba(128,104,139,0.1)] p-10 rounded-sm
                          overflow-hidden transition-all duration-300 hover:-translate-y-1.5
                          hover:shadow-[0_20px_40px_rgba(128,104,139,0.1)]"
             >
@@ -56,7 +56,7 @@ export default function Sesiones() {
                 {s.nombre}
               </div>
               <p
-                className="italic leading-[1.7] text-gris"
+                className="italic leading-[1.7] text-gris mb-6"
                 style={{
                   fontFamily: "var(--font-cormorant), serif",
                   fontSize: "0.98rem",
@@ -64,6 +64,17 @@ export default function Sesiones() {
               >
                 {s.desc}
               </p>
+              <div className="mt-auto pt-6 border-t border-[rgba(128,104,139,0.12)]">
+                <span
+                  className="text-violeta"
+                  style={{
+                    fontFamily: "var(--font-cormorant), serif",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  {s.precio}
+                </span>
+              </div>
             </div>
           ))}
         </div>
