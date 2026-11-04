@@ -17,9 +17,9 @@ export const secciones = [
   {
     label: "Yoga",
     href: "/yoga",
-    eyebrow: "Presencial · Online",
+    eyebrow: "Presencial · Semanal",
     resumen:
-      "Clases semanales, grabadas, talleres y retiros. Una práctica de reconexión con el cuerpo y la respiración.",
+      "Clases semanales presenciales. Una práctica de reconexión con el cuerpo y la respiración.",
   },
   {
     label: "Formaciones",
@@ -143,22 +143,16 @@ export const yoga = {
     "Las clases no son solo movimiento. Son una práctica de reconexión — con el cuerpo, con la respiración y con lo que estás viviendo.",
   items: [
     {
-      modalidad: "Presencial · Online",
+      modalidad: "Presencial",
       titulo: "Clases semanales",
       desc: "Grupos pequeños para trabajar con presencia real. Práctica física, respiración y espacio para integrar.",
     },
-    {
-      modalidad: "A tu ritmo",
-      titulo: "Clases grabadas",
-      desc: "Acceso a prácticas para sostener el proceso entre encuentros presenciales.",
-    },
-    {
-      modalidad: "Intensivos",
-      titulo: "Talleres y retiros",
-      desc: "Experiencias de inmersión para momentos donde el proceso necesita más espacio y profundidad.",
-    },
   ],
-  cta: { label: "Ver clases disponibles", href: "#" },
+  // Horarios de las clases. Placeholders hasta tener los reales.
+  horarios: [
+    { dia: "Día —", hora: "—:— hs" },
+    { dia: "Día —", hora: "—:— hs" },
+  ],
 };
 
 // ─── FORMACIONES ─────────────────────────────────────────────────────────────

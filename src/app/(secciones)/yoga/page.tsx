@@ -4,7 +4,7 @@ import ClasesYoga from "@/src/components/ClasesYoga";
 export const metadata: Metadata = {
   title: "Yoga",
   description:
-    "Clases de yoga semanales presenciales y online, clases grabadas, talleres y retiros.",
+    "Clases de yoga semanales presenciales.",
 };
 
 export default function Page() {

@@ -8,6 +8,7 @@ All notable changes to this project are documented here. Format: version + date,
 - "Quién soy" text updated with Jimena's wording.
 - Sesiones: each card now uses Jimena's description of the therapy and shows a price at the bottom (`precio` in `sesiones`, `src/data/content.ts`; "$ —" until real prices are set). Added Limpiezas Energéticas and Coaching Holístico (replaces Sesión Integradora); Constelaciones renamed Constelaciones Familiares.
 - "Biodescodificación" spelling used across the site.
+- Yoga: only weekly in-person classes (recorded classes and workshops/retreats removed), with a "Horarios" block (`horarios` in `yoga`, `src/data/content.ts`; placeholders until the real schedule is set). Home card and page description updated to match.
 - Gender-neutral wording across the site ("personas"/"quienes" instead of "mujeres"/"las que"), including the site description.
 - Footer simplified to a single row: logo + name (links to the home) on the left, copyright in the middle, social icons on the right; stacked and centered on mobile. The section menu was removed from the footer (the sticky navbar already covers it).
 - Footer icons no longer sit inside circles and are larger (32px), arena turning white on hover.
@@ -17,6 +18,7 @@ All notable changes to this project are documented here. Format: version + date,
 - Contact and social icons in the footer, bottom right (copyright moves to the bottom left, above it a thin divider; centered and stacked on mobile). Brand colors: arena outline icons on black, violeta on hover. Instagram, Facebook, YouTube and TikTok show only when their link is set in the `redes` list in `src/data/content.ts`; WhatsApp always shows and opens the chat with the default message.
 
 ### Removed
+- "Ver clases disponibles" button on the Yoga page (it had no destination).
 - Floating green WhatsApp button (its role moves to the WhatsApp icon in the footer; the navbar "Contacto" and the closing "Contactame" still open WhatsApp).
 
 ## [0.0.4] - 2026-10-26

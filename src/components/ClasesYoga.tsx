@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { yoga } from "@/src/data/content";
 
 // Hoja: dos esquinas opuestas muy redondeadas (eco de la hoja del logo)
@@ -51,9 +50,28 @@ export default function ClasesYoga() {
               </div>
             ))}
 
-            <Link href={yoga.cta.href} className="btn-primario mt-8 self-start">
-              {yoga.cta.label}
-            </Link>
+            {/* Horarios */}
+            <div className="mt-2">
+              <div className="font-titulo font-normal text-[0.82rem] tracking-[0.12em] uppercase text-violeta mb-3">
+                Horarios
+              </div>
+              <ul className="flex flex-col">
+                {yoga.horarios.map((h, i) => (
+                  <li
+                    key={i}
+                    className="flex items-baseline justify-between gap-6 py-3 border-b border-lavanda last:border-none"
+                    style={{
+                      fontFamily: "var(--font-cormorant), serif",
+                      fontSize: "1.1rem",
+                    }}
+                  >
+                    <span className="text-negro">{h.dia}</span>
+                    <span className="italic text-gris">{h.hora}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
 
           {/* Visual */}
