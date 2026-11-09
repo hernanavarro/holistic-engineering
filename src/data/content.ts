@@ -17,7 +17,7 @@ export const secciones = [
   {
     label: "Yoga",
     href: "/yoga",
-    eyebrow: "Presencial · Semanal",
+    eyebrow: "Yoga Dinámico · Presencial",
     resumen:
       "Clases semanales presenciales. Una práctica de reconexión con el cuerpo y la respiración.",
   },
@@ -245,7 +245,7 @@ export const yoga = {
   items: [
     {
       modalidad: "Presencial",
-      titulo: "Clases semanales",
+      titulo: "Yoga Dinámico",
       desc: "Grupos pequeños para trabajar con presencia real. Práctica física, respiración y espacio para integrar.",
     },
   ],

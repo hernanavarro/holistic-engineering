@@ -11,6 +11,7 @@ All notable changes to this project are documented here. Format: version + date,
 
 ### Changed
 - Yoga: real class schedule — Monday and Wednesday at 18:30 and 20 hs, Tuesday and Thursday at 17 hs.
+- Yoga: the class is now called "Yoga Dinámico" (was "Clases semanales"), matching Jimena's own material; the home card's label reads "Yoga Dinámico · Presencial".
 - The "Quiero saber más" button on the Alquimia banner (Sesiones page) now goes to `/alquimia`.
 
 ## [0.1.0] - 2026-11-04
