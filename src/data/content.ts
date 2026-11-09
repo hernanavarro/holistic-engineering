@@ -249,10 +249,10 @@ export const yoga = {
       desc: "Grupos pequeños para trabajar con presencia real. Práctica física, respiración y espacio para integrar.",
     },
   ],
-  // Horarios de las clases. Placeholders hasta tener los reales.
+  // Horarios de las clases semanales.
   horarios: [
-    { dia: "Día —", hora: "—:— hs" },
-    { dia: "Día —", hora: "—:— hs" },
+    { dia: "Lunes y Miércoles", hora: "18:30 y 20 hs" },
+    { dia: "Martes y Jueves", hora: "17 hs" },
   ],
 };
 

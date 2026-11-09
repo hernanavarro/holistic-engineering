@@ -10,6 +10,7 @@ All notable changes to this project are documented here. Format: version + date,
 - Alquimia page (`/alquimia`) with the program's content from Jimena's Canva: hero over the Canva cover photo (`fondo` in `alquimiaPagina.hero`, darkened so the white text reads), who it's for, what the mentoring is about (6 encounters · 90 minutes · 3 months), how we work (3 steps), what's included, who accompanies you (links to Quién soy) and the price block ($450.000 ARS / 450 USD, or two payments of $250.000 / 250 USD; bank transfer, Mercado Pago, Wise or PayPal; notes on the deposit and Mercado Pago installments). Its buttons open WhatsApp with an Alquimia-specific message. Content lives in `alquimiaPagina` in `src/data/content.ts`.
 
 ### Changed
+- Yoga: real class schedule — Monday and Wednesday at 18:30 and 20 hs, Tuesday and Thursday at 17 hs.
 - The "Quiero saber más" button on the Alquimia banner (Sesiones page) now goes to `/alquimia`.
 
 ## [0.1.0] - 2026-11-04
