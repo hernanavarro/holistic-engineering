@@ -131,7 +131,108 @@ export const alquimia = {
   titulo: "Programa Alquimia",
   texto:
     "Para quienes ya saben que los cambios de fondo no se hacen solos ni en una sesión. Seis encuentros de 90 minutos para trabajar en profundidad y con continuidad real.",
-  cta: { label: "Quiero saber más", href: "#" },
+  cta: { label: "Quiero saber más", href: "/alquimia" },
+};
+
+// ─── ALQUIMIA (página /alquimia) ─────────────────────────────────────────────
+// Contenido tomado del Canva "Mentoría Alquimia" (páginas 1 a 8).
+
+export const alquimiaPagina = {
+  hero: {
+    eyebrow: "Mentoría · 3 meses",
+    titulo: "Alquimia",
+    bajada: "Mentoría para personas responsables",
+    frase: "Un programa diseñado para guiarte en tu expansión total.",
+    ctaPrimario: "Quiero vivir mi Alquimia",
+    ctaSecundario: { label: "Ver el valor", href: "#valor" },
+    fondo: "https://odxbwxmixquriirb.public.blob.vercel-storage.com/Mentoria%20Alquimia.png",
+  },
+  paraVos: {
+    eyebrow: "Para quién es",
+    titulo: ["Este espacio", "es para ", "vos si…"],
+    texto:
+      "Alquimia es un programa de acompañamiento y transformación para vos que estás buscando un compromiso real y verdadero, para potenciar tus capacidades y brillar al máximo.",
+    items: [
+      "Ya conocés tus dolores, traumas y heridas, y querés profundizar más en tu proceso de sanación.",
+      "Ya probaste muchas terapias y llegó la hora de comprometerte con un proceso real.",
+      "Querés trabajar desde lo energético y lo espiritual, buscando un cambio de mindset.",
+      "Estás buscando hacer las cosas diferentes a tu clan familiar, honrándolos y decidiendo por vos.",
+    ],
+  },
+  deQueSeTrata: {
+    eyebrow: "La mentoría",
+    titulo: ["¿De qué se trata", "esta ", "mentoría?"],
+    parrafos: [
+      "Son seis encuentros 1:1, uno cada quince días —es decir, durante 3 meses—, de 1 hora y 30 minutos cada uno, donde vamos a trabajar en vos al 100%.",
+      "Descubriremos tus creencias limitantes, qué te está condicionando para avanzar, cuáles son tus miedos, qué valor personal tenés para con vos y qué historias te estás contando (y comprando) que limitan tu realidad.",
+      "Vamos a trabajar con herramientas holísticas como Reiki, movimientos de Constelaciones Familiares, Biodescodificación, Limpiezas Energéticas, Coaching Holístico y Registros Akáshicos. Además, integramos lo holístico con lo técnico para que tu proceso sea único e integral. El cambio es total.",
+    ],
+    datos: [
+      { valor: "6", label: "encuentros 1:1" },
+      { valor: "90", label: "minutos cada uno" },
+      { valor: "3", label: "meses, uno cada 15 días" },
+    ],
+  },
+  comoTrabajamos: {
+    eyebrow: "El proceso",
+    titulo: ["¿Cómo", "", "trabajamos?"],
+    pasos: [
+      {
+        numero: "01",
+        nombre: "Tu situación actual",
+        desc: "Empezamos viendo cómo estás hoy, qué te está pasando, qué estás sintiendo y hacia dónde querés llegar, sin vergüenza ni limitaciones (los límites están en la mente nomás).",
+      },
+      {
+        numero: "02",
+        nombre: "Un plan de acción",
+        desc: "Desde ahí, juntos trazamos un plan para pasar de tu situación actual a tu situación deseada: qué vamos a concretar y a manifestar.",
+      },
+      {
+        numero: "03",
+        nombre: "Cambios que se sostienen",
+        desc: "Para que puedas ver manifestados los cambios e incorporar esos nuevos hábitos en tu rutina diaria.",
+      },
+    ],
+  },
+  incluye: {
+    eyebrow: "Qué incluye",
+    titulo: ["¿Qué incluye", "", "Alquimia?"],
+    items: [
+      "6 sesiones 1:1 de 90 minutos, online o presencial en Córdoba, Argentina.",
+      "Material interactivo que te queda para siempre, ideal para aplicar a diario.",
+      "Acompañamiento diario, de lunes a viernes.",
+      "Ejercicios de profundización: tapping y técnicas de respiración.",
+      "Armonización energética de todos tus cuerpos.",
+      "Audio de afirmación y subliminal hecho para vos, según la temática a trabajar.",
+    ],
+  },
+  acompana: {
+    eyebrow: "Quién te acompaña",
+    titulo: ["¿Quién", "te ", "acompaña?"],
+    parrafos: [
+      "Soy Jimena Navarro, Ingeniera Industrial, profesora de Yoga y Terapeuta Holística. Acompaño procesos de transformación desde una mirada integral: cuerpo, mente, alma, emoción y energía.",
+      "Este espacio nace del deseo de acompañar procesos profundos, con herramientas que se pueden aplicar en el día a día, generando los cambios deseados, para que puedas tomar las riendas y ser protagonista de tu propia vida.",
+    ],
+    link: { label: "Conocer más sobre mí", href: "/#quien-soy" },
+  },
+  valor: {
+    eyebrow: "Valor de la transformación",
+    nombre: "Mentoría Alquimia",
+    precio: "$450.000",
+    precioUsd: "450 USD",
+    cuotas: "O en dos pagos de $250.000 / 250 USD",
+    medios: "Se abona por transferencia bancaria, Mercado Pago, Wise o PayPal.",
+    notas: [
+      "En caso de abonar en 2 pagos, el primero se abona como seña de la mentoría y el segundo antes de cumplir los 30 días del pago de la seña.",
+      "También se puede abonar en más cuotas según la financiación de Mercado Pago.",
+    ],
+    pregunta:
+      "¿Te animás a vivir el proceso de transformación que cambia tu forma de pensar, de sentir, de ser y de vivir?",
+    cta: "Quiero vivir mi Alquimia",
+  },
+  // Mensaje con el que se abre WhatsApp desde esta página.
+  whatsappMensaje:
+    "Hola Jimena! Quiero vivir mi Alquimia 🌿 Me gustaría saber más sobre la mentoría.",
 };
 
 // ─── YOGA ────────────────────────────────────────────────────────────────────
